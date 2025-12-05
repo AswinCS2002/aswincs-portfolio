@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@400;600&family=Roboto+Mono:wght@300;400&family=Lora:wght@400;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #6b4eff, #9572ff);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+  transition: opacity 0.4s ease, transform 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  transform: scale(1.15);
+}

@@ -1,0 +1,128 @@
+/* ---------------------------------------------------------
+      DARK PREMIUM INTERNSHIP DETAILS PAGE (PROJECT STYLE)
+---------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap");
+
+:root {
+  --card-bg: rgba(15, 15, 15, 0.6);
+  --border-glow: linear-gradient(135deg, #ff44cc, #6a5af9);
+  --white: #eaeaea;
+  --text-dim: #bcbcbc;
+}
+
+body {
+  background: radial-gradient(circle at top, #0d0d0f 0%, #000 100%);
+  font-family: "Outfit", sans-serif;
+}
+
+/* MAIN CONTAINER */
+.details-container {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 45px;
+
+  border-radius: 26px;
+  background: var(--card-bg);
+  backdrop-filter: blur(18px) saturate(180%);
+
+  border: 1.6px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 32px 70px rgba(0, 0, 0, 0.65),
+    0 10px 20px rgba(255, 0, 170, 0.12);
+
+  position: relative;
+  animation: fadeIn 0.7s ease-out;
+  overflow: hidden;
+}
+
+/* GRADIENT ANIMATED BORDER */
+.details-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  border-radius: 26px;
+
+  background: var(--border-glow);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* IMAGE */
+.details-image {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 20px;
+
+  box-shadow: 0 22px 55px rgba(255, 0, 170, 0.25);
+  transition: 0.5s ease;
+}
+
+.details-image:hover {
+  transform: scale(1.05);
+}
+
+/* TITLE */
+.details-content h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  background: var(--border-glow);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 25px;
+
+  /* Extra smooth premium effect */
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.15));
+}
+
+/* PARAGRAPH BLOCK */
+.details-content p {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px 22px;
+  border-radius: 14px;
+  line-height: 1.75;
+
+  border-left: 5px solid #ff44cc;
+  color: var(--text-dim);
+  margin: 18px 0;
+
+  box-shadow: 0 8px 22px rgba(255, 0, 170, 0.15);
+}
+
+/* PAGE HOVER FLOAT */
+.details-container:hover {
+  transform: translateY(-8px);
+  transition: 0.35s ease;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .details-container {
+    margin: 50px 20px;
+    padding: 28px;
+  }
+
+  .details-content h1 {
+    font-size: 2rem;
+  }
+}

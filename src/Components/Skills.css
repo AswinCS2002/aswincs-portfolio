@@ -1,0 +1,82 @@
+/* Skills Section */
+.skills-section {
+  padding: 40px 50px 50px 50px;
+  background: #0f0f0f;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Gradient Heading */
+.section-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, #ff0055, #00c6ff);
+  
+  /* Gradient text fix */
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Chrome & Safari fix */
+}
+
+/* Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 35px;
+}
+
+/* Skill Card */
+.skill-card {
+  background: #1e1e1e; /* CLEAR separation from background */
+  border: 1.5px solid rgba(255, 255, 255, 0.20); /* Always visible border */
+  border-radius: 18px;
+  padding: 30px 20px;
+
+  /* Soft shadow for visibility even when idle */
+  box-shadow: 
+    0 0 8px rgba(255, 255, 255, 0.05),
+    0 0 18px rgba(0, 0, 0, 0.7);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* Hover Effect (Still Premium) */
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 
+    0 0 25px rgba(255, 0, 85, 0.4),
+    0 0 18px rgba(0, 198, 255, 0.25);
+  border-color: transparent;
+  background: #151515;
+  background-image: linear-gradient(120deg, #ff0055, #00c6ff, #ffcc00);
+  background-size: 300% 300%;
+  animation: gradientMove 5s infinite alternate;
+}
+
+/* Gradient Animation */
+@keyframes gradientMove {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
+
+/* Content Inside */
+.skill-card img {
+  width: 55px;
+  margin-bottom: 15px;
+}
+
+.skill-card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.skill-card p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}

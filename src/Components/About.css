@@ -1,0 +1,148 @@
+/* ================================
+   ABOUT SECTION – MATCH PROJECT.CSS GLOW
+=================================*/
+
+.about {
+  padding: 4rem 2rem;
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lora', serif;
+}
+
+/* Main container */
+.about-container {
+  
+  max-width: 1150px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  border-radius: 22px;
+
+  /* Same background styling tone as project cards */
+  background: #151515;
+
+  /* EXACT MATCHED BORDER GLOW THEME */
+  position: relative;
+  padding: 2px;
+  border-radius: 22px;
+}
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 22px;
+
+  /* IDENTICAL GRADIENT as project-border */
+  background: linear-gradient(120deg, #ff0055, #00c6ff, #ffcc00);
+  background-size: 300% 300%;
+  animation: gradientMove 5s infinite alternate;
+
+  z-index: -1;
+}
+
+/* LEFT SIDE IMAGE */
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  width: 85%;
+  border-radius: 18px;
+  object-fit: cover;
+
+  /* Matching soft glow like project images */
+  box-shadow: 0 0 25px rgba(255, 0, 85, 0.25), 
+              0 0 40px rgba(0, 198, 255, 0.18);
+
+  border: 2px solid rgba(255, 0, 85, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 40px rgba(255, 0, 85, 0.45),
+    0 0 70px rgba(0, 198, 255, 0.35);
+}
+
+/* RIGHT TEXT SIDE */
+.about-right {
+  flex: 2;
+  color: #e8e8e8;
+}
+
+/* Label */
+.about-label {
+  font-size: 0.85rem;
+  color: #ff7faa;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Heading – MATCHED COLOR GRADIENT */
+.about-right h2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+
+  background: linear-gradient(90deg, #ff0055, #00c6ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  margin-bottom: 18px;
+  padding-left: 15px;
+  border-left: 4px solid #ff0055;
+}
+
+/* Paragraph */
+.about-right p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #d4d8e4;
+}
+
+/* Info section */
+.about-info {
+  margin-top: 25px;
+}
+
+.about-info p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #e5e5e5;
+}
+
+.about-info strong {
+  color: #00c6ff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-img {
+    width: 70%;
+  }
+
+  .about-right h2 {
+    font-size: 2rem;
+  }
+}
+
+/* SAME ANIMATION AS PROJECT.CSS */
+@keyframes gradientMove {
+  0% { background-position: 0 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0 50%; }
+}
