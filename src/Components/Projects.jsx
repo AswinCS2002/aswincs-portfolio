@@ -6,29 +6,31 @@ const Projects = () => {
   const projectList = [
     {
       id: 1,
-      title: "Port Folio Website",
+      title: "Portfolio Website",
       description:
-        "A curated collection of my development work, featuring full-stack applications, interactive UI components, and engineering projects built using React, Java, Python, and modern web technologies.",
+        "A modern personal portfolio showcasing my development journey, featuring full-stack applications, interactive UI components, and engineering projects.",
       image: "/Logo/portfolio.webp",
     },
     {
       id: 2,
-      title: "Expense Tracker-Front End",
+      title: "Expense Tracker (Front End)",
       description:
-        "A simple and intuitive tool to record, organize, and track daily expenses with ease. Built to provide clarity and control over personal budgeting.",
+        "A simple and intuitive tool to record, organize, and track daily expenses. Designed for clarity and improved personal budgeting.",
       image: "/Logo/expense tracker.webp",
     },
     {
       id: 3,
       title: "Face Recognition Attendance System",
       description:
-        "Smart Solutions for Modern Classrooms: Leveraging AI and IoT for Equitable Attendance,Behaviour Monitoring, And Improved teaching",
+        "An AI-powered attendance and behavior monitoring system combining face recognition and drowsiness detection for smarter classrooms.",
       image: "/Logo/Prototype.webp",
     },
     {
       id: 4,
-      title:"IoT Sensor Based Third Eye: A Sensory Navigation Aid For The Visually Impaired",
-      description: "A microcontroller driven smart glass used to navigate for the blind and track the blind person using the neo 6M GPS module",
+      title:
+        "IoT Sensor-Based Third Eye: Navigation Aid for the Visually Impaired",
+      description:
+        "A microcontroller-driven smart glass that assists visually impaired individuals using ultrasonic sensors and GPS tracking.",
       image: "/Logo/smart glass.webp",
     },
   ];

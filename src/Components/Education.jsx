@@ -3,27 +3,27 @@ import "./Education.css";
 
 const educationData = [
   {
-    img: "/education/School.webp",
+    img: process.env.PUBLIC_URL + "/education/School.webp",
     title: "High School",
     year: "2019",
-    description: "School:St.George's High School,Parathode",
-    desc:"CGPA:9.6"
+    description: "School: St. George's High School, Parathode",
+    desc: "CGPA: 9.6"
   },
   {
-    img: "/education/HigherSchool.webp",
-    title: "Higher Secondary ",
+    img: process.env.PUBLIC_URL + "/education/HigherSchool.webp",
+    title: "Higher Secondary",
     year: "2019-21",
-    description: "School:SNVHSS NR City",
-    department:"Computer Science",
-    desc:"CGPA:9.8"
+    description: "School: SNVHSS NR City",
+    department: "Computer Science",
+    desc: "CGPA: 9.8"
   },
   {
-    img: "/education/College.webp",
+    img: process.env.PUBLIC_URL + "/education/College.webp",
     title: "Bachelor of Technology",
     year: "2021-25",
-    description: "Institution: Mangalam College of EngineeringEttumanoor,Kottayam",
-    department:"Department of Electronics & Communication Engineering",
-    desc:"CGPA:Still waiting for results",
+    description: "Institution: Mangalam College of Engineering, Ettumanoor, Kottayam",
+    department: "Department of Electronics & Communication Engineering",
+    desc: "CGPA: Still waiting for results"
   }
 ];
 

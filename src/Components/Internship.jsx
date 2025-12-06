@@ -31,7 +31,7 @@ function BasicExample() {
           <Card key={index} className="internship-card">
             <Card.Img
               variant="top"
-              src={item.image}
+              src={process.env.PUBLIC_URL + "/" + item.image}
               className="internship-img"
             />
 

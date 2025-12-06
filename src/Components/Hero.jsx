@@ -6,9 +6,9 @@ export default function Hero() {
       <div className="hero-left">
         <h1>
           Hi, I'm <span>Aswin Santhosh Kumar</span>
-          <br></br>I build responsive and modern website
+          <br />I build responsive and modern websites
         </h1>
-        <h2>• Java Full Stack Developer • Electronics Engineer </h2>
+        <h2>• Java Full Stack Developer • Electronics Engineer</h2>
         <h2>• Tech Enthusiast • Front End Developer</h2>
         <p>
           A passionate developer with hands-on experience in web development and
@@ -18,17 +18,17 @@ export default function Hero() {
 
         <button
           className="hero-btn"
-          onClick={() => {
+          onClick={() =>
             document
               .getElementById("contact")
-              .scrollIntoView({ behavior: "smooth" });
-          }}
+              .scrollIntoView({ behavior: "smooth" })
+          }
         >
           Contact Me
         </button>
 
         <a
-          href="/AswinResume.pdf"
+          href={process.env.PUBLIC_URL + "/AswinResume.pdf"}
           target="_blank"
           rel="noopener noreferrer"
           className="hero-btn"
@@ -38,7 +38,11 @@ export default function Hero() {
       </div>
 
       <div className="hero-right">
-        <img src="/Profile.jpg" alt="Aswin Profile" className="hero-img" />
+        <img
+          src={process.env.PUBLIC_URL + "/Profile.jpg"}
+          alt="Aswin Profile"
+          className="hero-img"
+        />
       </div>
     </section>
   );

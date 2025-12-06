@@ -1,68 +1,70 @@
-import React from 'react'
+import React from "react";
 import "./Skills.css";
 
 function Skills() {
   return (
-    <section id="skills" class="skills-section">
-  <h2 class="section-title">My Skills</h2>
+    <section id="skills" className="skills-section">
+      <h2 className="section-title">My Skills</h2>
 
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="Logo/html.png" alt="HTML" />
-      <h3>HTML</h3>
-      <p>85%</p>
-    </div>
+      <div className="skills-grid">
+        
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/html.png"} alt="HTML" />
+          <h3>HTML</h3>
+          <p>85%</p>
+        </div>
 
-    <div class="skill-card">
-      <img src="Logo/CSS.png" alt="CSS" />
-      <h3>CSS</h3>
-      <p>78%</p>
-    </div>
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/CSS.png"} alt="CSS" />
+          <h3>CSS</h3>
+          <p>78%</p>
+        </div>
 
-    <div class="skill-card">
-      <img src="Logo/Javascript.png" alt="JavaScript" />
-      <h3>JavaScript</h3>
-      <p>60%</p>
-    </div>
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/Javascript.png"} alt="JavaScript" />
+          <h3>JavaScript</h3>
+          <p>60%</p>
+        </div>
 
-    <div class="skill-card">
-      <img src="Logo/Bootstrap.png" alt="Bootstrap" />
-      <h3>Bootstrap</h3>
-      <p>65%</p>
-    </div>
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/Bootstrap.png"} alt="Bootstrap" />
+          <h3>Bootstrap</h3>
+          <p>65%</p>
+        </div>
 
-    <div class="skill-card">
-      <img src="Logo/React.png" alt="React" />
-      <h3>React</h3>
-      <p>75%</p>
-    </div>
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/React.png"} alt="React" />
+          <h3>React</h3>
+          <p>75%</p>
+        </div>
 
-    <div class="skill-card">
-      <img src="Logo/Java.png" alt="Java" />
-      <h3>Java</h3>
-      <p>65%</p>
-    </div>
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/Java.png"} alt="Java" />
+          <h3>Java</h3>
+          <p>65%</p>
+        </div>
 
-    <div class="skill-card">
-      <img src="Logo/Raspberry Pi.png" alt="Raspberry Pi" />
-      <h3>Raspberry Pi</h3>
-      <p>50%</p>
-    </div>
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/Raspberry Pi.png"} alt="Raspberry Pi" />
+          <h3>Raspberry Pi</h3>
+          <p>50%</p>
+        </div>
 
-    <div class="skill-card">
-      <img src="Logo/OpenCV.png" alt="OpenCV" />
-      <h3>OpenCV</h3>
-      <p>50%</p>
-    </div>
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/OpenCV.png"} alt="OpenCV" />
+          <h3>OpenCV</h3>
+          <p>50%</p>
+        </div>
 
-    <div class="skill-card">
-      <img src="Logo/MySQL.png" alt="OpenCV" />
-      <h3>MySQL</h3>
-      <p>80%</p>
-    </div>
-  </div>
-</section>
-  )
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/MySQL.png"} alt="MySQL" />
+          <h3>MySQL</h3>
+          <p>80%</p>
+        </div>
+
+      </div>
+    </section>
+  );
 }
 
-export default Skills
+export default Skills;

@@ -11,14 +11,11 @@ import Education from "./Components/Education";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
-
-
-
 import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 
 function App() {
-  // ========== BACK TO TOP LOGIC ==========
+  // ===== BACK TO TOP BUTTON BEHAVIOUR =====
   useEffect(() => {
     let hideTimer;
     const btn = document.getElementById("backToTop");
@@ -29,7 +26,7 @@ function App() {
       clearTimeout(hideTimer);
       hideTimer = setTimeout(() => {
         btn.classList.remove("show");
-      }, 5000); // hide after 5 sec
+      }, 5000);
     };
 
     const handleMouseMove = () => showButton();
@@ -46,7 +43,6 @@ function App() {
     };
   }, []);
 
-  // ========== APP UI ==========
   return (
     <>
       <Navbar />
@@ -72,7 +68,7 @@ function App() {
               <section id="about">
                 <About />
               </section>
-              
+
               <section id="education">
                 <Education />
               </section>
@@ -89,16 +85,13 @@ function App() {
                 <Projects />
               </section>
 
-              <section id="contacts">
+              <section id="contact">
                 <Contact />
               </section>
 
               <section id="footer">
                 <Footer />
               </section>
-
-
-              
             </>
           }
         />

@@ -12,7 +12,11 @@ const ProjectCard = ({ project }) => {
       <div className="project-border"></div>
 
       <div className="project-content">
-        <img src={project.image} alt={project.title} className="project-img" />
+        <img
+          src={process.env.PUBLIC_URL + "/" + project.image}
+          alt={project.title}
+          className="project-img"
+        />
 
         <h3>{project.title}</h3>
         <p>{project.description}</p>
