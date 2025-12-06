@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.ec18427a.css",
-    "main.js": "/portfolio-website/static/js/main.396eff05.js",
+    "main.js": "/portfolio-website/static/js/main.badba5fe.js",
     "static/media/smart glass.webp": "/portfolio-website/static/media/smart glass.a741d192b5e7bf370b8f.webp",
     "static/media/Prototype.webp": "/portfolio-website/static/media/Prototype.f50e32018e4c5258ad56.webp",
     "static/media/expense tracker.webp": "/portfolio-website/static/media/expense tracker.11e321ebcfc015ea3431.webp",
     "static/media/portfolio.webp": "/portfolio-website/static/media/portfolio.b909bcac7c409fe9d6b5.webp",
     "index.html": "/portfolio-website/index.html",
     "main.ec18427a.css.map": "/portfolio-website/static/css/main.ec18427a.css.map",
-    "main.396eff05.js.map": "/portfolio-website/static/js/main.396eff05.js.map"
+    "main.badba5fe.js.map": "/portfolio-website/static/js/main.badba5fe.js.map"
   },
   "entrypoints": [
     "static/css/main.ec18427a.css",
-    "static/js/main.396eff05.js"
+    "static/js/main.badba5fe.js"
   ]
 }
