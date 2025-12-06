@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio-website/static/css/main.ec18427a.css",
-    "main.js": "/portfolio-website/static/js/main.badba5fe.js",
+    "main.css": "/portfolio-website/static/css/main.91a17d4d.css",
+    "main.js": "/portfolio-website/static/js/main.f8ee9685.js",
     "static/media/smart glass.webp": "/portfolio-website/static/media/smart glass.a741d192b5e7bf370b8f.webp",
     "static/media/Prototype.webp": "/portfolio-website/static/media/Prototype.f50e32018e4c5258ad56.webp",
     "static/media/expense tracker.webp": "/portfolio-website/static/media/expense tracker.11e321ebcfc015ea3431.webp",
     "static/media/portfolio.webp": "/portfolio-website/static/media/portfolio.b909bcac7c409fe9d6b5.webp",
     "index.html": "/portfolio-website/index.html",
-    "main.ec18427a.css.map": "/portfolio-website/static/css/main.ec18427a.css.map",
-    "main.badba5fe.js.map": "/portfolio-website/static/js/main.badba5fe.js.map"
+    "main.91a17d4d.css.map": "/portfolio-website/static/css/main.91a17d4d.css.map",
+    "main.f8ee9685.js.map": "/portfolio-website/static/js/main.f8ee9685.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec18427a.css",
-    "static/js/main.badba5fe.js"
+    "static/css/main.91a17d4d.css",
+    "static/js/main.f8ee9685.js"
   ]
 }
