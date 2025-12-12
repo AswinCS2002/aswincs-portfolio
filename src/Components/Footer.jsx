@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   return (
@@ -10,11 +11,21 @@ export default function Footer() {
         </p>
 
         <div className="footer-links">
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+          <HashLink smooth to="/#hero">
+            Home
+          </HashLink>
+          <HashLink smooth to="/#about">
+            About
+          </HashLink>
+          <HashLink smooth to="/#skills">
+            Skills
+          </HashLink>
+          <HashLink smooth to="/#projects">
+            Projects
+          </HashLink>
+          <HashLink smooth to="/#contact">
+            Contact
+          </HashLink>
         </div>
 
         <div className="footer-socials">
@@ -32,8 +43,9 @@ export default function Footer() {
           >
             LinkedIn
           </a>
-
-          <a href="mailto:aswinsanthoshcs5746@gmail.com">Email</a>
+          <a href="mailto:aswinsanthoshcs5746@gmail.com?subject=Portfolio%20Contact">
+            Email
+          </a>
         </div>
       </div>
     </footer>

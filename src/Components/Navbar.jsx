@@ -19,9 +19,9 @@ export default function Navbar() {
 
       {/* HAMBURGER BUTTON (ONLY ON MOBILE) */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        <div className={menuOpen ? "bar open" : "bar"}></div>
-        <div className={menuOpen ? "bar open" : "bar"}></div>
-        <div className={menuOpen ? "bar open" : "bar"}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
+        <div className={`bar ${menuOpen ? "open" : ""}`}></div>
       </div>
 
       {/* COLLAPSIBLE MENU */}
