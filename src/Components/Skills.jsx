@@ -62,6 +62,12 @@ function Skills() {
           <p>80%</p>
         </div>
 
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/Python.png"} alt="Python" />
+          <h3>Python</h3>
+          <p>75%</p>
+        </div>
+
       </div>
     </section>
   );
