@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/aswincs-portfolio/static/css/main.f702f408.css",
-    "main.js": "/aswincs-portfolio/static/js/main.46bae36c.js",
+    "main.js": "/aswincs-portfolio/static/js/main.e48b07c4.js",
     "static/media/smart glass.webp": "/aswincs-portfolio/static/media/smart glass.a741d192b5e7bf370b8f.webp",
     "static/media/Prototype.webp": "/aswincs-portfolio/static/media/Prototype.f50e32018e4c5258ad56.webp",
     "static/media/expense tracker.webp": "/aswincs-portfolio/static/media/expense tracker.11e321ebcfc015ea3431.webp",
     "static/media/portfolio.webp": "/aswincs-portfolio/static/media/portfolio.b909bcac7c409fe9d6b5.webp",
     "index.html": "/aswincs-portfolio/index.html",
     "main.f702f408.css.map": "/aswincs-portfolio/static/css/main.f702f408.css.map",
-    "main.46bae36c.js.map": "/aswincs-portfolio/static/js/main.46bae36c.js.map"
+    "main.e48b07c4.js.map": "/aswincs-portfolio/static/js/main.e48b07c4.js.map"
   },
   "entrypoints": [
     "static/css/main.f702f408.css",
-    "static/js/main.46bae36c.js"
+    "static/js/main.e48b07c4.js"
   ]
 }
