@@ -34,7 +34,7 @@ function Skills() {
 
         <div className="skill-card">
           <img src={process.env.PUBLIC_URL + "/Logo/React.png"} alt="React" />
-          <h3>React</h3>
+          <h3>React JS</h3>
           <p>75%</p>
         </div>
 
@@ -66,6 +66,12 @@ function Skills() {
           <img src={process.env.PUBLIC_URL + "/Logo/Python.png"} alt="Python" />
           <h3>Python</h3>
           <p>75%</p>
+        </div>
+
+        <div className="skill-card">
+          <img src={process.env.PUBLIC_URL + "/Logo/springboot.png"} alt="springboot" />
+          <h3>Springboot</h3>
+          <p>55%</p>
         </div>
 
       </div>

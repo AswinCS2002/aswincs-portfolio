@@ -28,7 +28,7 @@ export default function Hero() {
         </button>
 
         <a
-          href={process.env.PUBLIC_URL + "/AswinResume.pdf"}
+          href={process.env.PUBLIC_URL + "/Aswin Santhosh Kumar-Resume.pdf"}
           target="_blank"
           rel="noopener noreferrer"
           className="hero-btn"
